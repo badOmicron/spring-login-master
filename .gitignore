@@ -1,0 +1,41 @@
+target/
+.mvn/wrapper/maven-wrapper.jar
+mvnw
+mvnw.cmd
+.mvn/*/*
+
+### STS ###
+.apt_generated
+.classpath
+.factorypath
+.project
+.settings
+.springBeans
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+.nb-gradle/
+
+### Angular 2 ###
+typings
+app/**/*.js
+app/**/*.map
+node_modules
+jspm_packages
+bower_components
+*.js
+*.js.map
+npm-debug.log
+
+
+
