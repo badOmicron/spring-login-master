@@ -30,8 +30,9 @@ nbdist/
 typings
 app/**/*.js
 app/**/*.map
-node
-node_modules
+
+*node
+*/node_modules/**
 jspm_packages
 bower_components
 *.js
