@@ -10,7 +10,7 @@ import static java.util.Collections.singletonList;
  * Created by ingor on 24/02/2017.
  */
 @org.springframework.context.annotation.Configuration
-@org.springframework.data.mongodb.repository.config.EnableMongoRepositories(basePackages = "mx.bhit.apps.domain.login")
+@org.springframework.data.mongodb.repository.config.EnableMongoRepositories(basePackages = "mx.bhit.lab.spring.micro.login.domain.*")
 public class MongoConfig extends org.springframework.data.mongodb.config.AbstractMongoConfiguration {
 
     @org.springframework.context.annotation.Bean
@@ -45,12 +45,12 @@ public class MongoConfig extends org.springframework.data.mongodb.config.Abstrac
     public com.mongodb.Mongo mongo() throws Exception {
 
         return new com.mongodb.MongoClient(singletonList(new com.mongodb.ServerAddress("localhost", 27017)),
-            singletonList(com.mongodb.MongoCredential.createCredential("omicron", this.getDatabaseName(),
-                "Omicron_2017".toCharArray())));
+            singletonList(com.mongodb.MongoCredential.createCredential("admin", this.getDatabaseName(),
+                "t00r".toCharArray())));
     }
 
     //@Value("${mongodb.name}")
-    private String dbName = "bhit";
+    private String dbName = "admin";
 
     //@Value("${mongodb.host}")
     //private String host;
