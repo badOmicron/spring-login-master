@@ -1,44 +1,12 @@
-
-<div class="container">
-    <div class="row">
-        <div class="col m6">
-            <h2>Welcome</h2>
-            <p>{{user}}</p>
-        </div>
-        <div class="col m6">
-            <h2 class="center-align">Login</h2>
-            <div class="row">
-                <form class="col s12">
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="email" type="email" class="validate">
-                            <label for="email">Email</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="input-field col s12">
-                            <input id="pass" type="password" class="validate">
-                            <label for="pass">Password</label>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col s12">
-                            <p>
-                                <input type="checkbox" id="remember">
-                                <label for="remember">Remember me</label>
-                            </p>
-                        </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="row">
-                        <div class="col m12">
-                            <p class="right-align">
-                                <button class="btn btn-large waves-effect waves-light" type="button" name="action">Login</button>
-                            </p>
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </div>
-    </div>
-</div>
+<nav>
+  <div class="nav-wrapper header-nav blue darkenblue z-depth-3 z-depth-1-half">
+    <a class="brand-logo"><i class="material-icons">cloud</i>Logo</a>
+    <ul class="right hide-on-med-and-down">
+      <li><a><i class="material-icons">search</i></a></li>
+      <li><a><i class="material-icons">view_module</i></a></li>
+      <li><a><i class="material-icons">refresh</i></a></li>
+      <li><a><i class="material-icons">more_vert</i></a></li>
+    </ul>
+  </div>
+</nav>
+<router-outlet></router-outlet>
